@@ -1,0 +1,146 @@
+{
+    "name": "CM45G F4 V1",
+    "vendorId": "0x1562",
+    "productId": "0x2AB3",
+    "matrix": {
+      "rows": 6,
+      "cols": 8
+      },
+      "customKeycodes": [
+        {
+          "name": "BLE_1",
+          "title": "Channel_1",
+          "shortName": "BLE1"
+        },
+        {
+          "name": "BLE_2",
+          "title": "Channel_2",
+          "shortName": "BLE2"
+        },
+        {
+          "name": "BLE_3",
+          "title": "Channel_3",
+          "shortName": "BLE3"
+        },
+            {
+          "name": "BLE2.4G ",
+          "title": "Turn to 2.4G mode",
+          "shortName": "2.4G"
+        },
+        {
+            "name": "USB",
+            "title": "USB Mode",
+            "shortName": "USB"
+        },
+        {
+          "name": "BLE_DEL",
+          "title": "Del Ble Channel",
+          "shortName": "BLEDel"
+        },
+        {
+          "name": "RADIO_DFU",
+          "title": "RADIO_DFU",
+          "shortName": "RadioBL"
+        },
+        {
+          "name": "BLE DFU",
+          "title": "BLE",
+          "shortName": "BLEBL"
+        },
+        {
+          "name": "LOCK_KB",
+          "title": "LOCK_KB",
+          "shortName": "LOCK"
+        },
+        {
+          "name": "RGB_BAT",
+          "title": "RGB_Show_BAT",
+          "shortName": "BatRgb"
+        }
+    ],
+    "layouts": {
+      "keymap": [
+        [
+          "0,0",
+          "0,1",
+          "0,2",
+          "0,3",
+          "0,4",
+          "0,5",
+          "0,6",
+          "0,7"
+        ],
+        [
+          "1,0",
+          "1,1",
+          "1,2",
+          "1,3",
+          "1,4",
+          "1,5",
+          "1,6",
+          "0,0\n\n\n\n\n\n\n\n\ne",
+          "0,1\n\n\n\n\n\n\n\n\ne"
+        ],
+        [
+          {
+            "w": 1.5
+          },
+          "2,0",
+          "2,1",
+          "2,2",
+          "2,3",
+          "2,4",
+          "2,5",
+          "2,6",
+          {
+            "w": 1.5
+          },
+          "2,7"
+        ],
+        [
+          {
+            "w": 1.75
+          },
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "3,4",
+          "3,5",
+          "3,6",
+          {
+            "w": 1.25
+          },
+          "3,7"
+        ],
+        [
+          {
+            "w": 2
+          },
+          "4,0",
+          "4,1",
+          "4,2",
+          "4,3",
+          "4,4",
+          "4,5",
+          "4,6",
+          "4,7"
+        ],
+        [
+          {
+            "w": 1.25
+          },
+          "5,0",
+          "5,1",
+          "5,2",
+          {
+            "w": 2.75
+          },
+          "5,3",
+          "5,5",
+          "5,6",
+          "5,7"
+        ]
+      ]
+    }
+  }

@@ -1,0 +1,10 @@
+{
+    "maintainer": "Pivot KB",
+    "manufacturer":"Pivot",
+    "usb": {
+        "pid": "0x520B",
+        "vid": "0x1915",
+        "device_version": "1.0.0"
+    }
+
+}

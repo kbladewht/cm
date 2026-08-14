@@ -1,0 +1,167 @@
+{
+    "name": "CM40pro v2",
+    "vendorId": "0x1BA2",
+    "productId": "0x2A3D",
+    "matrix": {
+      "rows": 5,
+      "cols": 8
+      },
+      "customKeycodes": [
+        {
+          "name": "BLE_1",
+          "title": "Channel_1",
+          "shortName": "BLE1"
+        },
+        {
+          "name": "BLE_2",
+          "title": "Channel_2",
+          "shortName": "BLE2"
+        },
+        {
+          "name": "BLE_3",
+          "title": "Channel_3",
+          "shortName": "BLE3"
+        },
+            {
+          "name": "BLE2.4G ",
+          "title": "Turn to 2.4G mode",
+          "shortName": "2.4G"
+        },
+        {
+            "name": "USB",
+            "title": "USB Mode",
+            "shortName": "USB"
+        },
+        {
+          "name": "BLE_DEL",
+          "title": "Del Ble Channel",
+          "shortName": "BLEDel"
+        },
+        {
+          "name": "RADIO_DFU",
+          "title": "RADIO_DFU",
+          "shortName": "RadioBL"
+        },
+        {
+          "name": "BLE DFU",
+          "title": "BLE",
+          "shortName": "BLEBL"
+        },
+        {
+          "name": "LOCK_KB",
+          "title": "LOCK_KB",
+          "shortName": "LOCK"
+        },
+        {
+          "name": "RGB_BAT",
+          "title": "RGB_Show_BAT",
+          "shortName": "BatRgb"
+        }
+    ],
+    "layouts": {
+      "keymap":
+      [
+        [
+          {
+            "w": 0.75,
+            "h": 0.75
+          },
+          "0,0"
+        ],
+        [
+          {
+            "y": -0.5,
+            "x": 2
+          },
+          "0,1",
+          "0,2",
+          "0,3",
+          "0,4",
+          "0,5",
+          "0,6",
+          {
+            "x": 0.75
+          },
+          "0,7"
+        ],
+        [
+          {
+            "y": -0.75,
+            "w": 0.75,
+            "h": 0.75
+          },
+          "0,0\n\n\n\n\n\n\n\n\ne",
+          {
+            "w": 0.75,
+            "h": 0.75
+          },
+          "0,1\n\n\n\n\n\n\n\n\ne"
+        ],
+        [
+          {
+            "x": 0.75,
+            "w": 1.25
+          },
+          "1,0",
+          "1,1",
+          "1,2",
+          "1,3",
+          "1,4",
+          "1,5",
+          "1,6",
+          {
+            "w": 1.75
+          },
+          "1,7"
+        ],
+        [
+          {
+            "x": 0.75,
+            "w": 1.5
+          },
+          "2,0",
+          "2,1",
+          "2,2",
+          "2,3",
+          "2,4",
+          "2,5",
+          "2,6",
+          {
+            "w": 1.5
+          },
+          "2,7"
+        ],
+        [
+          {
+            "x": 0.75,
+            "w": 2
+          },
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "3,4",
+          "3,5",
+          "3,6",
+          "3,7"
+        ],
+        [
+          {
+            "x": 0.75,
+            "w": 1.25
+          },
+          "4,0",
+          "4,1",
+          "4,2",
+          {
+            "w": 2.75
+          },
+          "4,3",
+          "4,5",
+          "4,6",
+          "4,7"
+        ]
+      ]
+      
+    }
+  }

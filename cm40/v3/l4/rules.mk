@@ -1,0 +1,14 @@
+MCU = STM32L433
+BOOTLOADER = custom
+TAP_DANCE_ENABLE = yes
+UF2_FAMILY = 0xabcd1433
+FIRMWARE_FORMAT = uf2
+MCU_LDSCRIPT=STM32L433xC
+include $(TOP_DIR)/keyboards/pivot/p433/rules.mk
+CONSOLE_ENABLE = yes
+MOUSEKEY_ENABLE = yes
+ENCODER_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
+curr_kb = qf_chibios_cm40_l4
+USE_HAL_LIB_IND = N
+NKRO_ENABLE = no
