@@ -4,13 +4,11 @@ BOARD = GENERIC_STM32_F401XC
 
 include $(TOP_DIR)/keyboards/pivot/p401/rules.mk
 CONSOLE_ENABLE = yes
+TAP_DANCE_ENABLE = yes
 MOUSEKEY_ENABLE = yes
 ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 curr_kb = qf_chibios_d5_f4
 LTO_ENABLE = no
-OLED_ENABLE = yes
-OLED_DRIVER = ssd1306
 NKRO_ENABLE = no
-BACKLIGHT_ENABLE = yes
-BACKLIGHT_DRIVER = software
+LTO_ENABLE = no
