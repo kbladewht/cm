@@ -2,7 +2,7 @@ MCU = STM32F401
 BOARD = GENERIC_STM32_F401XC
 # PRODUCE_401_LIB_IND = Y
 
-include $(TOP_DIR)/keyboards/pivot/p401/rules.mk
+include $(TOP_DIR)/keyboards/across/p401/rules.mk
 CONSOLE_ENABLE = yes
 MOUSEKEY_ENABLE = yes
 ENCODER_ENABLE = yes
