@@ -9,4 +9,4 @@
 
 //#define CHARGE_DETECT_PIN B14
 
-//#define RTT_DEBUG_QF
+#define RTT_DEBUG_QF

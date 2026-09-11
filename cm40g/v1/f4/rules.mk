@@ -3,12 +3,14 @@ BOARD = GENERIC_STM32_F401XC
 # PRODUCE_401_LIB_IND = Y
 
 include $(TOP_DIR)/keyboards/across/p401/rules.mk
-TAP_DANCE_ENABLE = yes
 CONSOLE_ENABLE = yes
 MOUSEKEY_ENABLE = yes
 ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 curr_kb = qf_chibios_d5_f4
 LTO_ENABLE = no
+OLED_ENABLE = yes
+OLED_DRIVER = ssd1306
 NKRO_ENABLE = no
-LTO_ENABLE = no
+BACKLIGHT_ENABLE = yes
+BACKLIGHT_DRIVER = software

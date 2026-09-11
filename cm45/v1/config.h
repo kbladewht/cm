@@ -1,7 +1,7 @@
 #pragma once
 // #define QF_COL_FAILING_EDGE_EVENT
-#define ENCODER_A_PINS { A2 } //M.2 PIN10
-#define ENCODER_B_PINS { A3 } //M.2 PIN8
+#define ENCODER_A_PINS { C11 } //v3 A2
+#define ENCODER_B_PINS { C10 } //v3 A3
 #define ENCODER_RESOLUTIONS { 2 }
 
 #define QF_ADC_PIN B1
@@ -27,7 +27,7 @@
 #define MATRIX_COL_PINS     { C12, D2, B8, B3, B6, B7, C0, C14}
 
 
-#define SLEEP_MS 5000
+#define SLEEP_MS 60000
 
 
 #define RADIO_LED_INDEX 18
