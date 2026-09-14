@@ -1,9 +1,9 @@
 {
-    "keyboard_name": "CM40F v1",
-    "name": "CM40F v1",
+    "keyboard_name": "PRO v1",
+    "name": "CM40G PRO v1",
     "maintainer": "Y",
     "product": "40",
-    "manufacturer": "CMKB",
+    "manufacturer": "CM40G",
     "usb": {
         "pid": "0x2A3D",
         "vid": "0x1BA2",

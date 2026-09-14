@@ -1,9 +1,9 @@
 {
-    "keyboard_name": "CM45 F4 V1 RGB67",
+    "keyboard_name": "F4 V1-R57",
     "name": "CM45",
     "maintainer": "Y",
     "product": "45",
-    "manufacturer": "CMKB",
+    "manufacturer": "CM45",
     "usb": {
         "pid": "0x2AB3",
         "vid": "0x1562",
