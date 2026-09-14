@@ -39,30 +39,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	{ KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT} \
 }
 };
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [0] = { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD) },
-    [1] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
-    [2] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
-    [3] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }
-};
-void release_PB3_and_set_high(void)
-{
-    // 1. 禁用 SWO (TRACE_IOEN)
-    DBGMCU->CR &= ~DBGMCU_CR_TRACE_IOEN;
-
-    // 2. 禁用 STOP 模式下的 Debug (防止 Debug 模块占用 IO)
-    DBGMCU->CR &= ~DBGMCU_CR_DBG_STOP;
-
-    // 3. 将 PB3 设置为普通 GPIO 推挽输出
-    GPIOB->MODER &= ~(0b11 << (3 * 2));  // 清除 PB3 模式
-    GPIOB->MODER |=  (0b01 << (3 * 2));  // 设置 PB3 为输出模式
-
-    // 4. 设置 PB3 为推挽输出类型
-    GPIOB->OTYPER &= ~(1 << 3);          // 推挽
-
-    // 5. 将 PB3 输出高电平
-    GPIOB->ODR |= (1 << 3);
-};
 
 extern uint8_t tmp_max_sleep_one_time;
 extern uint32_t        counterD ;
@@ -73,7 +49,12 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
      counterD=0;
     return true;
 }
-
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [0] = { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD) },
+    [1] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [2] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [3] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }
+};
 
 #ifdef RGB_MATRIX_ENABLE
 
