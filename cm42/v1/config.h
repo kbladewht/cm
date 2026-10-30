@@ -22,7 +22,7 @@
 #define MATRIX_COL_PINS     { C10, C11, C12, D2, B4, B5, B8, B3, B6, B7, C0, C14 }
 
 
-#define SLEEP_MS 500
+#define SLEEP_MS 4000
 
 
 #define RADIO_LED_INDEX 18
